@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'IBM Plex Mono', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #43545C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 80px; 
+  }
+  
+  #header-box {
+      background-color: #518298; 
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+  }
+  
+  header h1 {
+      font-size: 2.5em;
+      color: white;
+  }
+  
+  header p {
+      color: white;
+      font-size: 1.2em;
+  }
+  
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #518298;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: white;
+  }
+  
+  .pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20vh; 
+  }
+  
+  .price-card {
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+  }
+  
+  .card-title h2 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 20px;
+  }
+  
+  .price span {
+    font-size: 0.4em;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  .features {
+    list-style: none;
+    margin: 20px 0 30px;
+  }
+  
+  .features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .features li:last-child {
+    border-bottom: none;
+  }
+  
+  .cta-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.9;
+  }
+  .price-card:nth-child(1) .card-title { background-color: #00a2ff; }
+  .price-card:nth-child(2) .card-title { background-color: #800080; }
+  .price-card:nth-child(3) .card-title { background-color: #FFD700; }
+  
+  .price-card:nth-child(1) { background-color: #ebf5fb; }
+  .price-card:nth-child(2) { background-color: #f4ecf7; }
+  .price-card:nth-child(3) { background-color: #FFFEF5; }
+  
+  .price-card:nth-child(1) .cta-button { background-color: #00a2ff; }
+  .price-card:nth-child(2) .cta-button { background-color: #800080; }
+  .price-card:nth-child(3) .cta-button { background-color: #FFD700; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .price-card {
+      width: 45%;
+      margin: 0 2% 30px;
+    }
+  
+    .price-card:nth-child(3) {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .price-card {
+      width: 30%;
+      margin: 0 1.5% 30px;
+    }
+  }
+  #about-us-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75vw;
+      max-height: 40vh;
+      padding: 20px;
+      background-color: #518298; 
+      border-radius: 15px;
+      overflow: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 5vh;
+      margin-bottom: 20px;
+  }
+  
+  #about-us-box h2, #about-us-box p {
+      color: white; 
+      text-align: center;
+  }
+  
+  #about-us-box p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+  }
+  #video-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75vw;
+      padding: 20px;
+      background-color: #518298; 
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #video h2, #video p {
+      color: white;
+      text-align: center;
+  }
+  
+  #video h2 {
+      font-size: 1.5rem;
+  }
+  
+  #video p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: white;
+  }
+  #form-box {
+      background-color: #518298; 
+      padding: 20px;              
+      text-align: center;         
+      border-radius: 10px;        
+      margin-top: 20px;           
+      width: 75%;                 
+      margin-left: auto;          
+      margin-right: auto;
+  }
+  
+  #form-box form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #form-box input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 400px; 
+      margin: 10px 0;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+  }
+  
+  #form-box button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #43545C;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  #form-box button[type="submit"]:hover {
+      background-color: #2980b9;  
+      color: white;
+  }
+  #form-box label {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+  }
+  
